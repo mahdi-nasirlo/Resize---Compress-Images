@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/js/script.js" defer></script>
+    <title>Resize -- Compress Images</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="upload-box">
+        <input type="file" name="" accept="image/*" id="upload-input" />
+        <img src="/assets/image/upload.png" alt="" />
+        <p>جستوجوی فایل برای اپلود</p>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <label class="lable" for="width">طول</label>
+            <input type="number" class="input" name="width" id="width" />
+          </div>
+          <div class="column">
+            <label class="lable" for="height">عرض</label>
+            <input type="number" class="input" name="height" id="height" />
+          </div>
+        </div>
+        <div class="row chekcboxes">
+          <div class="column ratio">
+            <label for="ratio">رعایت نسبت طول و عرض</label>
+            <input type="checkbox" class="input" name="ratio" id="ratio" />
+          </div>
+          <div class="column quality">
+            <label for="quality">بهینه سازی تصویر</label>
+            <input type="checkbox" class="input" name="quality" id="quality" />
+          </div>
+        </div>
+        <button class="download-btn">دانلود تصویر</button>
+      </div>
+    </div>
+  </body>
+</html>

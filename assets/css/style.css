@@ -1,0 +1,137 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSans(FaNum).ttf");
+  src: url("../fonts/IRANSans(FaNum)_Light.ttf") format("truetype"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSans(FaNum)_Medium.ttf")
+      format("truetype"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/IRANSans(FaNum)_UltraLight.ttf") format("truetype");
+}
+body {
+  font-family: "IRANSans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #927dfc;
+}
+
+.wrapper {
+  background-color: white;
+  width: 550px;
+  padding: 30px;
+  border-radius: 9px;
+}
+
+.wrapper .upload-box {
+  border: gainsboro dashed;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-box p {
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+
+.upload-box img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.wrapper .active {
+  border: none;
+  padding: 0;
+}
+
+.wrapper .active img {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 9px;
+}
+
+.wrapper .active p {
+  display: none;
+}
+
+.wrapper .content {
+  margin-top: 20px;
+}
+
+.wrapper .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .column {
+  width: calc(100% / 2 - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .content .column .lable {
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 1.06rem;
+}
+
+.input {
+  /* width: 100%; */
+  /* display: block; */
+  /* margin: 0 15px; */
+  padding: 15px;
+  outline: none;
+  border: rgb(185, 185, 185) 1px solid;
+  border-radius: 3px;
+}
+
+.input:focus {
+  border: #927dfc 2px solid;
+  padding: 14px;
+}
+
+.content .chekcboxes .column {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.content .chekcboxes {
+  margin-top: 15px;
+}
+
+.chekcboxes .column input {
+  accent-color: #927dfc;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+.content .download-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #927dfc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "IRANSans";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content .download-btn:hover {
+  background-color: #664fdc;
+}
