@@ -65,8 +65,18 @@ body {
   display: none;
 }
 
+.wrapper.active .content {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
 .wrapper .content {
   margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  /* transition: display 0s, visibility 0s, opacity 0.5s linear; */
 }
 
 .wrapper .row {
